@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory Classes | Class 5th to 10th</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Outfit', sans-serif; overflow-x: hidden; }
+        
+        /* Cool Gradient Text */
+        .text-gradient {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Glassmorphism for 10th Boards Section */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Animated Blob Background */
+        .bg-blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <div class="bg-blue-600 p-2 rounded-lg"><i class="fa-solid fa-trophy text-yellow-300 text-xl"></i></div>
+                    <span class="font-bold text-2xl tracking-tight text-gray-900">Victory<span class="text-blue-600">Classes</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 font-medium transition">Features</a>
+                    <a href="#boards" class="text-gray-600 hover:text-blue-600 font-medium transition">10th Special</a>
+                    <a href="#faculty" class="text-gray-600 hover:text-blue-600 font-medium transition">Faculty</a>
+                    <a href="https://forms.gle/9qv4i7tuNq2Vvi357" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all transform hover:scale-105 shadow-md">Enroll Now</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 pt-2 pb-6 space-y-2 text-center shadow-lg">
+                <a href="#features" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md font-medium">Features</a>
+                <a href="#boards" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md font-medium">10th Special</a>
+                <a href="#faculty" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md font-medium">Faculty</a>
+                <a href="https://forms.gle/9qv4i7tuNq2Vvi357" class="block mt-4 bg-blue-600 text-white px-3 py-3 rounded-md font-semibold">Enroll Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-gray-50">
+        <!-- New: Subtle Study-Themed Background Layer -->
+        <div class="absolute inset-0 z-0 opacity-35 pointer-events-none select-none">
+            <img src="https://raw.githubusercontent.com/omt8861/shivaay/refs/heads/main/study%20picture.jpg" 
+                 alt="Study Background" 
+                 class="w-full h-full object-cover">
+            <!-- Gradient Overlay to smoothly blend into the white section below -->
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-50"></div>
+        </div>
+
+        <!-- Animated Blobs (Kept behind text, blending with the new background) -->
+        <div class="bg-blob bg-blue-300 w-96 h-96 rounded-full top-0 left-[-10%] mix-blend-multiply"></div>
+        <div class="bg-blob bg-purple-300 w-96 h-96 rounded-full bottom-0 right-[-10%] mix-blend-multiply"></div>
+
+        <!-- Foreground Content (Added relative and z-10 to stay perfectly sharp on top) -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up" data-aos-duration="1000">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 font-semibold text-sm mb-6 border border-blue-200">Admissions Open</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 tracking-tight mb-6 leading-tight">
+                Empowering Students from <br class="hidden md:block">
+                <span class="text-gradient">Class 5th to 10th</span>
+            </h1>
+            <p class="mt-4 max-w-2xl text-lg md:text-xl text-gray-600 mx-auto mb-10">
+                Achieve top ranks with expert guidance, interactive live classes, and structured study materials designed for your success.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#boards" class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:-translate-y-1 shadow-xl">10th Boards Special</a>
+                <a href="#features" class="bg-white border-2 border-gray-200 hover:border-blue-600 hover:text-blue-600 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold transition-all">Explore Features</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Why Choose Victory Classes?</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300">
+                        <i class="fa-solid fa-video text-2xl text-blue-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Online Live Classes</h3>
+                    <p class="text-gray-600">Interactive, high-quality live sessions to keep you engaged, focused, and learning in real-time.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-500 transition-colors duration-300">
+                        <i class="fa-solid fa-book-open text-2xl text-green-500 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Detailed Notes</h3>
+                    <p class="text-gray-600">Comprehensive, easy-to-understand PDF notes for every chapter to make revision a breeze.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-yellow-500 transition-colors duration-300">
+                        <i class="fa-solid fa-pen-to-square text-2xl text-yellow-500 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Regular Homework</h3>
+                    <p class="text-gray-600">Daily assignments and structured tasks to ensure you practice exactly what you learn.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-500 transition-colors duration-300">
+                        <i class="fa-solid fa-clipboard-question text-2xl text-red-500 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">On-Class Questions</h3>
+                    <p class="text-gray-600">Real-time problem solving, live polling, and active recall techniques during classes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="boards" class="py-20 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16" data-aos="zoom-in">
+                <span class="bg-yellow-400 text-gray-900 px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase shadow-lg">Premium Access</span>
+                <h2 class="text-3xl md:text-5xl font-bold mt-6 mb-4 text-white">Special 10th Boards Prep</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg">Your ultimate toolkit to score 95%+ in the board examinations. We leave no stone unturned.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fa-solid fa-clock-rotate-left text-3xl text-indigo-400"></i>
+                        <h3 class="text-xl font-bold text-white">PYQs Practice</h3>
+                    </div>
+                    <p class="text-gray-400">Extensive solving of Previous Year Questions to understand board patterns deeply.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fa-solid fa-file-signature text-3xl text-pink-400"></i>
+                        <h3 class="text-xl font-bold text-white">Pre-Boards Conduct</h3>
+                    </div>
+                    <p class="text-gray-400">Strictly monitored mock exams designed to eliminate exam fear and improve time management.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fa-solid fa-layer-group text-3xl text-blue-400"></i>
+                        <h3 class="text-xl font-bold text-white">Question Banks</h3>
+                    </div>
+                    <p class="text-gray-400">Highly curated, most-probable question banks exclusively prepared by our experts.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fa-solid fa-person-chalkboard text-3xl text-green-400"></i>
+                        <h3 class="text-xl font-bold text-white">Doubt Clearing</h3>
+                    </div>
+                    <p class="text-gray-400">Dedicated live doubt-clearing sessions to ensure absolutely zero conceptual gaps.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fa-solid fa-handshake-angle text-3xl text-yellow-400"></i>
+                        <h3 class="text-xl font-bold text-white">1-on-1 Mentorship</h3>
+                    </div>
+                    <p class="text-gray-400">Personalized guidance to track your progress, build strategy, and keep motivation high.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="600">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fa-solid fa-users text-3xl text-purple-400"></i>
+                        <h3 class="text-xl font-bold text-white">Monthly PTM</h3>
+                    </div>
+                    <p class="text-gray-400">Regular Parent-Teacher Meetings to maintain transparency and track performance jointly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faculty" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Learn From The Experts</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-10">
+                
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden w-full max-w-sm transform hover:-translate-y-3 transition duration-500 hover:shadow-2xl" data-aos="fade-right">
+                    <div class="relative h-72 bg-gray-200 overflow-hidden group">
+                        <img src="https://via.placeholder.com/400x500/1e3a8a/ffffff?text=Vivek+Sharma" alt="Vivek Sharma" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+                            <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">Expert Faculty</span>
+                        </div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Vivek Sharma</h3>
+                        <p class="text-gray-600">Simplifying complex concepts with ease to help students ace their exams with unshakeable confidence.</p>
+                        <div class="flex justify-center gap-4 mt-6">
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden w-full max-w-sm transform hover:-translate-y-3 transition duration-500 hover:shadow-2xl" data-aos="fade-left">
+                    <div class="relative h-72 bg-gray-200 overflow-hidden group">
+                        <img src="https://via.placeholder.com/400x500/1e3a8a/ffffff?text=Shivaay+Tiwari" alt="Shivaay Tiwari" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+                            <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">Expert Faculty</span>
+                        </div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Shivaay Tiwari</h3>
+                        <p class="text-gray-600">Dedicated entirely to student mentorship, turning academic weaknesses into extreme strengths.</p>
+                        <div class="flex justify-center gap-4 mt-6">
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 text-gray-400 py-10 text-center border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <div class="flex items-center gap-2 mb-4">
+                <i class="fa-solid fa-trophy text-gray-600 text-xl"></i>
+                <span class="font-bold text-xl tracking-tight text-gray-500">VictoryClasses</span>
+            </div>
+            <p>&copy; 2026 Victory Classes. Shaping Futures, Building Success.</p>
+            <p><!-- Main website (index.html) ke footer mein ye add karein -->
+<div class="mt-4">
+    <a href="terms.html" class="text-blue-500 hover:text-blue-400 text-sm underline transition">Read Terms and Conditions</a>
+</div></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({
+            once: true, // Animation happens only once while scrolling down
+            offset: 50,
+        });
+
+        // Mobile Menu Toggle Logic
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
